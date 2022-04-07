@@ -2,43 +2,44 @@
 
 namespace logic
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
+	class Program
+	{
+		static void Main(string[] args)
+		{
 			Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
 
 			var color = Console.ReadLine();
 
-			if (color == "red")
+			switch (color)
 			{
-				Console.BackgroundColor = ConsoleColor.Red;
-				Console.ForegroundColor = ConsoleColor.Black;
+				case "red":
+					Console.BackgroundColor = ConsoleColor.Red;
+					Console.ForegroundColor = ConsoleColor.Black;
 
-				Console.WriteLine("Your color is red!");
-			}
+					Console.WriteLine("Your color is red!");
+					break;
 
-			else if (color == "green")
-			{
-				Console.BackgroundColor = ConsoleColor.Green;
-				Console.ForegroundColor = ConsoleColor.Black;
+				case "green":
+					Console.BackgroundColor = ConsoleColor.Green;
+					Console.ForegroundColor = ConsoleColor.Black;
 
-				Console.WriteLine("Your color is green!");
-			}
-			else if (color == "cyan")
-			{
-				Console.BackgroundColor = ConsoleColor.Cyan;
-				Console.ForegroundColor = ConsoleColor.Black;
+					Console.WriteLine("Your color is green!");
+					break;
 
-				Console.WriteLine("Your color is yellow!");
-			}
-			else
-			{
-				Console.BackgroundColor = ConsoleColor.Yellow;
-				Console.ForegroundColor = ConsoleColor.Red;
+				case "cyan":
+					Console.BackgroundColor = ConsoleColor.Cyan;
+					Console.ForegroundColor = ConsoleColor.Black;
 
-				Console.WriteLine("Your collor is default!");
+					Console.WriteLine("Your color is cyan!");
+					break;
+
+				default:
+					Console.BackgroundColor = ConsoleColor.Yellow;
+					Console.ForegroundColor = ConsoleColor.Red;
+
+					Console.WriteLine("Your color is default!");
+					break;
 			}
 		}
-    }
+	}
 }
