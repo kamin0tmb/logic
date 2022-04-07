@@ -7,10 +7,12 @@ namespace logic
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-			for (int i = 5 ; i > 1 ; i--)
+			int t = 0;
+			do
 			{
-				Console.WriteLine("Iteration {0}", i);
-			var color = Console.ReadLine();
+				Console.WriteLine("Iteration {0}", t);
+				t++;
+				var color = Console.ReadLine();
 
 				switch (color)
 				{
@@ -42,7 +44,7 @@ namespace logic
 						Console.WriteLine("Your color is default!");
 						break;
 				}
-			}
+			} while (t < 3);
 		}
 	}
 }
