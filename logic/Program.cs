@@ -8,7 +8,7 @@ namespace logic
         {
             string A = "123";
             string B = "234";
-            var C = (A == B);
+            var C = (A != B);
             Console.WriteLine(C);
         }
     }
