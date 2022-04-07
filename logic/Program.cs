@@ -7,8 +7,9 @@ namespace logic
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-			for (int i = 0 ; i < 5 ; i++)
+			for (int i = 5 ; i > 1 ; i--)
 			{
+				Console.WriteLine("Iteration {0}", i);
 			var color = Console.ReadLine();
 
 				switch (color)
