@@ -25,19 +25,19 @@ namespace logic
 
 				Console.WriteLine("Your color is green!");
 			}
-			else if (color == "yellow")
+			else if (color == "cyan")
 			{
-				Console.BackgroundColor = ConsoleColor.DarkYellow;
+				Console.BackgroundColor = ConsoleColor.Cyan;
 				Console.ForegroundColor = ConsoleColor.Black;
 
 				Console.WriteLine("Your color is yellow!");
 			}
 			else
 			{
-				Console.BackgroundColor = ConsoleColor.Cyan;
-				Console.ForegroundColor = ConsoleColor.Black;
+				Console.BackgroundColor = ConsoleColor.Yellow;
+				Console.ForegroundColor = ConsoleColor.Red;
 
-				Console.WriteLine("Your color is cyan!");
+				Console.WriteLine("Your collor is default!");
 			}
 		}
     }
