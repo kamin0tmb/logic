@@ -6,10 +6,14 @@ namespace logic
 	{
 		static void Main(string[] args)
 		{
-			int[,] array = { { 1, 2, 3 }, { 5, 6, 7 } };
-			foreach (var item in array)
+			int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, {11, 12, 13 } };
+			for (int k = 0; k < array.GetUpperBound(1) + 1; k++)
 			{
-				Console.Write(item + " ");
+				
+					for (int c = 0; c < array.GetUpperBound(0) + 1; c++)
+						Console.Write(array[c, k] + " ");
+
+				Console.WriteLine();
 			}
 			Console.WriteLine();
 			Console.WriteLine("Введите свое имя:");
