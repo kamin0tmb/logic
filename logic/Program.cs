@@ -6,6 +6,20 @@ namespace logic
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine("Введите свое имя:");
+			string name = Console.ReadLine();
+			foreach (var ch in name)
+			{
+				Console.Write(ch + " ");
+			}
+			Console.WriteLine("Последняя буква вашего имени {0}", name[name.Length - 1]);
+			int i;
+			Console.WriteLine("Ваше имя наоборот: ");
+			for (i = name.Length - 1; i > -1; i--)
+            {
+				Console.Write(name[i] + " ");
+			}
+			Console.WriteLine();
 			Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
 			int t = 0;
 			do
