@@ -6,6 +6,12 @@ namespace logic
 	{
 		static void Main(string[] args)
 		{
+			int[,] array = { { 1, 2, 3 }, { 5, 6, 7 } };
+			foreach (var item in array)
+			{
+				Console.Write(item + " ");
+			}
+			Console.WriteLine();
 			Console.WriteLine("Введите свое имя:");
 			string name = Console.ReadLine();
 			foreach (var ch in name)
