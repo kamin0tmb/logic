@@ -6,11 +6,13 @@ namespace logic
 	{
 		static void Main(string[] args)
 		{
-
+			var (name, age) = ("Евгения", 27);
+			Console.WriteLine("Ваше имя: {0}", name);
+			Console.WriteLine("Ваш возраст: {0}", age);
 			(string name, int age) anketa;
-			Console.WriteLine("Введите Ваше имя: ");
+			Console.Write("Введите Ваше имя: ");
 			anketa.name = Console.ReadLine();
-			Console.WriteLine("Введите Ваш возраст: ");
+			Console.Write("Введите Ваш возраст: ");
 			anketa.age = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine("Ваше имя: {0}", anketa.Item1);
 			Console.WriteLine("Ваш возраст: {0}", anketa.Item2);
