@@ -13,6 +13,7 @@ namespace logic
 			User.LastName = Console.ReadLine();
 			Console.Write("Введите логин: ");
 			User.Login = Console.ReadLine();
+			User.LoginLength = User.Login.Length;
 			
 
 
