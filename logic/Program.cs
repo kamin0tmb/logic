@@ -14,7 +14,12 @@ namespace logic
 			Console.Write("Введите логин: ");
 			User.Login = Console.ReadLine();
 			User.LoginLength = User.Login.Length;
-			
+			Console.Write("Есть ли у Вас домашнее животное? (да/нет): ");
+			var H = Console.ReadLine();
+			if (H == "да")
+				User.HasPet = true;
+			else
+				User.HasPet = false;
 
 
 		}
