@@ -20,7 +20,13 @@ namespace logic
 				User.HasPet = true;
 			else
 				User.HasPet = false;
-
+			Console.Write("Введите Ваш возраст: ");
+			User.Age = double.Parse(Console.ReadLine());
+			User.favcolors = new string[3];
+			for (int i = 0; i < User.favcolors.Length; i++)
+            {
+				User.favcolors[i] = Console.ReadLine();
+            }
 
 		}
 	}
