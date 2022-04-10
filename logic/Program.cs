@@ -6,17 +6,18 @@ namespace logic
 	{
 		static void Main(string[] args)
 		{
-			var (name, age) = ("Евгения", 27);
-			Console.WriteLine("Ваше имя: {0}", name);
-			Console.WriteLine("Ваш возраст: {0}", age);
-			(string name, int age) anketa;
-			Console.Write("Введите Ваше имя: ");
-			anketa.name = Console.ReadLine();
-			Console.Write("Введите Ваш возраст: ");
-			anketa.age = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine("Ваше имя: {0}", anketa.Item1);
-			Console.WriteLine("Ваш возраст: {0}", anketa.Item2);
-
+			(string Name, string Type, double Age, int NameCount) Pet;
+			Console.Write("Введите имя Вашего питомца: ");
+			Pet.Name = Console.ReadLine();
+			Console.Write("Введите, какое животное Ваш питомец: ");
+			Pet.Type = Console.ReadLine();
+			Console.Write("Введите возраст Вашего питомца: ");
+			Pet.Age = double.Parse(Console.ReadLine());
+			Pet.NameCount = Pet.Name.Length;
+			Console.WriteLine("Имя питомца: {0}", Pet.Item1);
+			Console.WriteLine("Тип питомца: {0}", Pet.Item2);
+			Console.WriteLine("Возраст питомца: {0}", Pet.Item3);
+			Console.WriteLine("В имени Вашего питомца {0} букв.", Pet.Item4);
 		}
 	}
 }
