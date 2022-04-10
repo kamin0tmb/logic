@@ -24,6 +24,7 @@ namespace logic
 					User.HasPet = false;
 				Console.Write("Введите Ваш возраст: ");
 				User.Age = double.Parse(Console.ReadLine());
+				Console.WriteLine("Введите три любимых цвета: ");
 				User.favcolors = new string[3];
 				for (int i = 0; i < User.favcolors.Length; i++)
 				{
